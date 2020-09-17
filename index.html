@@ -1,162 +1,166 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
-    <header>
-      <nav>
-        <a aria-label="Логотип города Седона: мост над горами на фоне облаков">
-          <svg></svg>
+
+  <body class="page__body">
+    <header class="header fix-container">
+      <nav class="header__navigation navigation">
+        <a class="navigation__logo-link" aria-label="Логотип города Седона: мост над горами на фоне облаков">
+          <svg class="navigation__logo-img" aria-hidden="true"></svg>
         </a>
 
-        <ul>
-          <li>
-            <a href="blank.html">Информация</a>
+        <ul class="navigation__menu menu">
+          <li class="menu__item">
+            <a class="menu__link" href="blank.html">Информация</a>
           </li>
 
-          <li>
-            <a href="blank.html">Фото и видео</a>
+          <li class="menu__item">
+            <a class="menu__link" href="blank.html">Фото и видео</a>
           </li>
 
-          <li>
-            <a href="blank.html">Карта штата</a>
+          <li class="menu__item">
+            <a class="menu__link" href="blank.html">Карта штата</a>
           </li>
 
-          <li>
-            <a href="hotels.html">Гостиницы</a>
+          <li class="menu__item">
+            <a class="menu__link" href="hotels.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <section>
-        <h1>Sedona</h1>
+    <main class="main fix-container">
+      <section class="section top-section">
+        <h1 class="visually-hidden">Сайт города Седона</h1>
 
-        <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="top-section__description">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       </section>
 
-      <section>
-        <h2>5 причин, чтобы посетить Седону</h2>
+      <section class="section features-section">
+        <h2 class="visually-hidden">5 причин, чтобы посетить Седону</h2>
+        
+        <p class="section__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <ol class="features-section__list">
+          <li class="features-section__list-item feature feature--expanded-sub-list">
+            <div class="feature__container">
+              <h3 class="feature__title">Настоящий городок</h3>
 
-        <ol>
-          <li>
-            <article>
-              <div>
-                <h3>Настоящий городок</h3>
+              <p class="feature__description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
 
-                <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            <img class="feature__image" src="https://via.placeholder.com/800x256" alt="Вход в здание гостиницы на фоне горы" width="800" height="256">
 
-                <img src="https://via.placeholder.com/800x256" alt="Вход в здание гостиницы на фоне горы" width="800" height="256">
-              </div>
+            <ul class="feature__sub-list">
+              <li class="feature__sub-list-item sub-feature sub-feature--hotels">
+                <h4 class="sub-feature__title">Жильё</h4>
+                <p class="sub-feature__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
 
-              <ul>
-                <li>
-                  <h4>Жильё</h4>
-                  <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-                </li>
+              <li class="feature__sub-list-item sub-feature sub-feature--food">
+                <h4 class="sub-feature__title">Еда</h4>
+                <p class="sub-feature__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
 
-                <li>
-                  <h4>Еда</h4>
-                  <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                </li>
-
-                <li>
-                  <h4>Сувениры</h4>
-                  <p>Не только китайского, но и местного производства!</p>
-                </li>
-              </ul>
-            </article>
+              <li class="feature__sub-list-item sub-feature sub-feature--souvenirs">
+                <h4 class="sub-feature__title">Сувениры</h4>
+                <p class="sub-feature__description">Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
           </li>
 
-          <li>
-            <article>
-              <h3>Там есть Мост дьявола</h3>
+          <li class="features-section__list-item feature feature--expanded-image">
+            <div class="feature__container">
+              <h3 class="feature__title">Там есть Мост дьявола</h3>
+  
+              <p class="feature__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
 
-              <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-
-              <img src="https://via.placeholder.com/800x256" alt="Мост дьявола - арка из камне в каньоне" width="800" height="256">
-            </article>
+            <img class="feature__image" src="https://via.placeholder.com/800x256" alt="Мост дьявола - арка из камне в каньоне" width="800" height="256">
           </li>
 
-          <li>
-            <h3>Небольшая площадь</h3>
+          <li class="features-section__list-item feature">
+            <h3 class="feature__title">Небольшая площадь</h3>
 
-            <p>Все достопримечательности находятся очень близко</p>
+            <p class="feature__description">Все достопримечательности находятся очень близко</p>
           </li>
 
-          <li>
-            <h3>Красивая дорога</h3>
+          <li class="features-section__list-item feature">
+            <h3 class="feature__title">Красивая дорога</h3>
 
-            <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
+            <p class="feature__description">Ехать в седону из лас-вегаса совсем не скучно!</p>
           </li>
           
-          <li>
-            <h3>Мало туристов</h3>
+          <li class="features-section__list-item feature">
+            <h3 class="feature__title">Мало туристов</h3>
 
-            <p>Большинство едет в гранд каньон и толпится там</p>
+            <p class="feature__description">Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ol>
       </section>
 
-      <section>
-        <h2>Заинтересовались?</h2>
+      <section class="section order-section">
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
 
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <p class="order-section__subtitle">Заинтересовались?</p>
 
-        <button type="button">Поиск гостиницы в Седоне</button>
+        <p class="section__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+
+        <a class="order-section__button button" href="#">Поиск гостиницы в Седоне</a>
 
         <!-- Форма -->
       </section>
 
-      <section>
-        <h2>Где расположена Седона</h2>
+      <section class="section map-section">
+        <h2 class="visually-hidden">Где расположена Седона</h2>
 
-        <img src="https://via.placeholder.com/1200x594" width="1200" height="594" alt="Расположение города Седона на карте">
+        <!-- todo вынести атрибуты из iframe в файл стилей width="600" height="450" frameborder="0" style="border:0;" -->
+        <iframe class="map-section__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56145.614365388654!2d-111.83198142224626!3d34.8535389235133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1600339933876!5m2!1sru!2sru" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </section>
     </main>
 
-    <footer>
-      <section>
-        <h2>Контакты</h2>
+    <footer class="footer fix-container">
+      <section class="footer__section">
+        <h2 class="visually-hidden">Контакты</h2>
 
-        <p>#visitSEDONA</p>
-
-        <a href="tel:+74956660166">Тел: +7(495) 666-01-66</a>
+        <address class="footer__address">
+          <p class="footer__tag">#visitSEDONA</p>
+        
+          <a class="footer__link" href="tel:+74956660166">Тел: +7(495) 666-01-66</a>
+        </address>
       </section>
 
-      <section>
-        <h2>Социальные сети</h2>
+      <section class="footer__section">
+        <h2 class="visually-hidden">Социальные сети</h2>
 
-        <ul>
-          <li>
-            <a href="https://twitter.com/" target="_blank" aria-label="Twitter" rel="noopener noreferrer nofollow">
-              <svg aria-hidden="true"></svg>
+        <ul class="footer__socials socials">
+          <li class="socials__item">
+            <a class="socials__link" href="https://twitter.com/" target="_blank" aria-label="Twitter" rel="noopener noreferrer nofollow">
+              <svg class="socials__icon" aria-hidden="true"></svg>
             </a>
           </li>
 
-          <li>
-            <a href="https://facebook.com/" target="_blank" aria-label="Facebook" rel="noopener noreferrer nofollow">
-              <svg aria-hidden="true"></svg>
+          <li class="socials__item">
+            <a class="socials__link" href="https://facebook.com/" target="_blank" aria-label="Facebook" rel="noopener noreferrer nofollow">
+              <svg class="socials__icon" aria-hidden="true"></svg>
             </a>
           </li>
 
-          <li>
-            <a href="https://www.youtube.com/" target="_blank" aria-label="Youtube" rel="noopener noreferrer nofollow">
-              <svg aria-hidden="true"></svg>
+          <li class="socials__item">
+            <a class="socials__link" href="https://www.youtube.com/" target="_blank" aria-label="Youtube" rel="noopener noreferrer nofollow">
+              <svg class="socials__icon" aria-hidden="true"></svg>
             </a>
           </li>
         </ul>
       </section>
 
-      <p>
-        <a>
-          Website by
-          <svg aria-label="HTML Academy"></svg>
+      <p class="footer__logo">
+        Website by
+        <a class="footer__logo-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="HTML Academy" rel="noopener noreferrer nofollow">
+          <svg class="footer__logo-icon" aria-hidden="true"></svg>
         </a>
       </p>
     </footer>

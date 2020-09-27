@@ -1,0 +1,337 @@
+/* Variables */
+
+:root {
+  --background-color: #F2F2F2;
+
+  --primary-color: #333333;
+  --secondary-color: #000000;
+
+  --contrast-color: #FFFFFF;
+  --secondary-contrast-color: #EEEEEE;
+
+  --accent-color: #81B3D2;
+  --accent-color-darker: #669EC0;
+  --accent-color-dark: #5496BD;
+
+  --secondary-accent-color: #766357;
+  --secondary-accent-color-darker: #604E43;
+  --secondary-accent-color-dark: #503E33;
+
+  --addition-contrast-color: #E5E5E5;
+  --addition-primary-color: #666666;
+}
+
+
+
+/* Fonts */
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+       url("../fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+       url("../fonts/ptsansbold.woff") format("woff");
+}
+
+
+/* Global styles */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  background-color: var(--background-color, #F2F2F2);
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 87.5%; /* 14px */
+  line-height: 1;
+  color: var(--primary-color, #333333);
+  overflow-anchor: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.visually-hidden {
+
+}
+
+
+/* Fix-container */
+
+.fix-container {
+
+}
+
+
+/* Header */
+
+.header {
+
+}
+
+.header__navigation {
+
+}
+
+.navigation__logo-link {
+
+}
+
+.navigation__logo-img {
+
+}
+
+
+/* Navigation */
+
+.navigation {
+
+}
+
+.navigation__logo-link {
+
+}
+
+.navigation__logo-img {
+
+}
+
+.navigation__menu {
+
+}
+
+
+/* Menu */
+
+.menu {
+
+}
+
+.menu__item {
+
+}
+
+.menu__link {
+
+}
+
+
+/* Main */
+
+.main {
+
+}
+
+
+/* Section */
+
+.section {
+
+}
+
+.section__description {
+
+}
+
+
+/* Top-section */
+
+.top-section {
+
+}
+
+.top-section__description {
+
+}
+
+
+/* Features-section */
+
+.features-section {
+
+}
+
+.features-section__list {
+
+}
+
+.features-section__list-item {
+
+}
+
+/* Feature */
+
+.feature {
+
+}
+
+.feature--expanded-sub-list {
+
+}
+
+.feature__container {
+
+}
+
+.feature__title {
+
+}
+
+.feature__description {
+
+}
+
+.feature__image {
+
+}
+
+.feature__sub-list {
+
+}
+
+.feature__sub-list-item {
+
+}
+
+
+/* Sub-feature */
+
+.sub-feature {
+
+}
+
+.sub-feature--hotels {
+
+}
+
+.sub-feature--food {
+
+}
+
+.sub-feature--souvenirs {
+
+}
+
+.sub-feature__title {
+
+}
+
+.sub-feature__description {
+
+}
+
+
+/* Order-section */
+
+.order-section {
+
+}
+
+.order-section__subtitle {
+
+}
+
+.order-section__button {
+
+}
+
+
+/* Map-section */
+
+.map-section {
+
+}
+
+.map-section__map {
+
+}
+
+
+/* Button */
+
+.button {
+
+}
+
+
+/* Footer */
+
+.footer {
+
+}
+
+.footer__section {
+
+}
+
+.footer__address {
+
+}
+
+.footer__tag {
+
+}
+
+.footer__link {
+
+}
+
+.footer__socials {
+
+}
+
+.footer__logo {
+
+}
+
+.footer__logo-link {
+
+}
+
+.footer__logo-icon {
+
+}
+
+
+/* Socials */
+
+.socials {
+
+}
+
+.socials__item {
+
+}
+
+.socials__link {
+
+}
+
+.socials__icon {
+
+}

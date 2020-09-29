@@ -1,24 +1,30 @@
 /* Variables */
 
 :root {
-  --background-color: #F2F2F2;
+  --background-color: rgb(242, 242, 242);
 
-  --primary-color: #333333;
-  --secondary-color: #000000;
+  --primary-color: rgb(51, 51, 51);
+  --secondary-color: rgb(0, 0, 0);
 
-  --contrast-color: #FFFFFF;
-  --secondary-contrast-color: #EEEEEE;
+  --contrast-color: rgb(255, 255, 255);
+  --secondary-contrast-color: rgb(238, 238, 238);
 
-  --accent-color: #81B3D2;
-  --accent-color-darker: #669EC0;
-  --accent-color-dark: #5496BD;
+  --accent-color: rgb(129, 179, 210);
+  --accent-color-darker: rgb(102, 158, 192);
+  --accent-color-dark: rgb(84, 150, 189);
 
-  --secondary-accent-color: #766357;
-  --secondary-accent-color-darker: #604E43;
-  --secondary-accent-color-dark: #503E33;
+  --secondary-accent-color: rgb(118, 99, 87);
+  --secondary-accent-color-darker: rgb(96, 78, 67);
+  --secondary-accent-color-dark: rgb(80, 62, 51);
 
-  --addition-contrast-color: #E5E5E5;
-  --addition-primary-color: #666666;
+  --addition-contrast-color: rgb(242, 242, 242);
+  --addition-primary-color: rgb(102, 102, 102);
+
+  /* Colors with opacity */
+
+  --contrast-color-opacity-90: rgba(255, 255, 255, 0.9);
+  --contrast-color-opacity-30: rgba(255, 255, 255, 0.3);
+  --secndary-color-opacity-30: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -48,6 +54,8 @@
 
 html {
   box-sizing: border-box;
+  font-size: 87.5%; /* 14px */
+  line-height: 1;
 }
 
 *,
@@ -59,11 +67,12 @@ html {
 body {
   min-width: 1200px;
   margin: 0;
-  background-color: var(--background-color, #F2F2F2);
+  background-color: var(--background-color, rgb(242, 242, 242));
   font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 87.5%; /* 14px */
-  line-height: 1;
-  color: var(--primary-color, #333333);
+  font-size: 100%;
+  line-height: 1.5;
+  color: var(--primary-color, rgb(51, 51, 51));
+  text-transform: uppercase;
   overflow-anchor: none;
 }
 
@@ -77,21 +86,31 @@ a {
 }
 
 .visually-hidden {
-
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 
 
 /* Fix-container */
 
 .fix-container {
-
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
 /* Header */
 
 .header {
-
+  background-color: var(--contrast-color, rgb(255, 255, 255));
 }
 
 .header__navigation {
@@ -129,7 +148,11 @@ a {
 /* Menu */
 
 .menu {
+  list-style: none;
 
+  font-weight: 700;
+  line-height: 1.857;
+  color: var(--secondary-color, rgb(0, 0, 0));
 }
 
 .menu__item {
@@ -138,6 +161,18 @@ a {
 
 .menu__link {
 
+}
+
+.menu__link:hover {
+  color: var(--accent-color, rgb(129, 179, 210))
+}
+
+.menu__link:active {
+  color: var(--secndary-color-opacity-30, rgba(0, 0, 0, 0.3))
+}
+
+.menu__link--active {
+  color: var(--secondary-accent-color, rgb(118, 99, 87));
 }
 
 
@@ -155,7 +190,8 @@ a {
 }
 
 .section__description {
-
+  line-height: 1.857;
+  text-align: center;
 }
 
 
@@ -163,21 +199,28 @@ a {
 
 .top-section {
 
+  background-color: var(--accent-color, rgb(129, 179, 210));
 }
 
 .top-section__description {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.238;
+  color: var(--secondary-color, rgb(0, 0, 0));
+  text-align: center;
 
+  background-color: var(--contrast-color, rgb(255, 255, 255));
 }
 
 
 /* Features-section */
 
 .features-section {
-
+  background-color: var(--contrast-color, rgb(255, 255, 255));
 }
 
 .features-section__list {
-
+  list-style: none;
 }
 
 .features-section__list-item {
@@ -187,11 +230,17 @@ a {
 /* Feature */
 
 .feature {
-
+  background-color: var(--secondary-contrast-color, rgb(238, 238, 238));
 }
 
 .feature--expanded-sub-list {
+  color: var(--contrast-color, rgb(255, 255, 255));
+  background-color: var(--accent-color, rgb(129, 179, 210));
+}
 
+.feature--expanded-image {
+  color: var(--contrast-color, rgb(255, 255, 255));
+  background-color: var(--accent-color, rgb(129, 179, 210));
 }
 
 .feature__container {
@@ -199,11 +248,13 @@ a {
 }
 
 .feature__title {
-
+  font-size: 1.5rem;
+  line-height: 1;
+  text-align: center;
 }
 
 .feature__description {
-
+  text-align: center;
 }
 
 .feature__image {
@@ -211,7 +262,7 @@ a {
 }
 
 .feature__sub-list {
-
+  list-style: none;
 }
 
 .feature__sub-list-item {
@@ -222,7 +273,7 @@ a {
 /* Sub-feature */
 
 .sub-feature {
-
+  background-color: var(--contrast-color, rgb(255, 255, 255));
 }
 
 .sub-feature--hotels {
@@ -238,22 +289,29 @@ a {
 }
 
 .sub-feature__title {
-
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--secondary-color, rgb(0, 0, 0));
+  text-align: center;
 }
 
 .sub-feature__description {
-
+  color: var(--primary-color, rgb(51, 51, 51));
+  text-align: center;
 }
 
 
 /* Order-section */
 
 .order-section {
-
+  background-color: var(--contrast-color, rgb(255, 255, 255));
 }
 
 .order-section__subtitle {
-
+  font-size: 2.143rem;
+  font-weight: 700;
+  line-height: 0.8;
+  text-align: center;
 }
 
 .order-section__button {
@@ -275,14 +333,46 @@ a {
 /* Button */
 
 .button {
-
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--contrast-color, rgb(255, 255, 255));
+  text-transform: uppercase;
 }
+
+.button:active {
+  color: var(--contrast-color-opacity-30, rgba(255, 255, 255, 0.3));
+}
+
+.button--brown {
+  background-color: var(--secondary-accent-color, rgb(118, 99, 87));
+}
+
+.button--brown:hover {
+  background-color: var(--secondary-accent-color-darker, rgb(96, 78, 67));
+}
+
+.button--brown:active {
+  background-color: var(--secondary-accent-color-dark, rgb(80, 62, 51));
+}
+
+.button--blue {
+  background-color: var(--accent-color, rgb(129, 179, 210));
+}
+
+.button--blue:hover {
+  background-color: var(--accent-color-darker, rgb(102, 158, 192));
+}
+.button--blue:active {
+  background-color: var(--accent-color-dark, rgb(84, 150, 189));
+}
+
 
 
 /* Footer */
 
 .footer {
-
+  background-color: var(--contrast-color-opacity-90, rgba(255, 255, 255, 0.9));
 }
 
 .footer__section {
@@ -290,7 +380,12 @@ a {
 }
 
 .footer__address {
-
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.238;
+  color: var(--secondary-color, rgb(0, 0, 0));
+  text-align: center;
 }
 
 .footer__tag {
@@ -306,7 +401,7 @@ a {
 }
 
 .footer__logo {
-
+  text-align: center;
 }
 
 .footer__logo-link {
@@ -329,7 +424,15 @@ a {
 }
 
 .socials__link {
+  background-color: var(--accent-color, rgb(129, 179, 210));
+}
 
+.socials__link:hover {
+  background-color: var(--accent-color-darker, rgb(102, 158, 192));
+}
+
+.socials__link:active {
+  background-color: var(--accent-color-dark, rgb(84, 150, 189));
 }
 
 .socials__icon {

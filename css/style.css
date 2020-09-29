@@ -213,89 +213,89 @@ a {
 }
 
 
-/* Features-section */
+/* Reasons-section */
 
-.features-section {
+.reasons-section {
   background-color: var(--contrast-color, rgb(255, 255, 255));
 }
 
-.features-section__list {
+.reasons-section__list {
   list-style: none;
 }
 
-.features-section__list-item {
+.reasons-section__list-item {
 
 }
+
+/* Reason */
+
+.reason {
+  background-color: var(--secondary-contrast-color, rgb(238, 238, 238));
+}
+
+.reason--expanded-sub-list {
+  color: var(--contrast-color, rgb(255, 255, 255));
+  background-color: var(--accent-color, rgb(129, 179, 210));
+}
+
+.reason--expanded-image {
+  color: var(--contrast-color, rgb(255, 255, 255));
+  background-color: var(--accent-color, rgb(129, 179, 210));
+}
+
+.reason__container {
+
+}
+
+.reason__title {
+  font-size: 1.5rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.reason__description {
+  text-align: center;
+}
+
+.reason__image {
+
+}
+
+.reason__sub-list {
+  list-style: none;
+}
+
+.reason__sub-list-item {
+
+}
+
 
 /* Feature */
 
 .feature {
-  background-color: var(--secondary-contrast-color, rgb(238, 238, 238));
+  background-color: var(--contrast-color, rgb(255, 255, 255));
 }
 
-.feature--expanded-sub-list {
-  color: var(--contrast-color, rgb(255, 255, 255));
-  background-color: var(--accent-color, rgb(129, 179, 210));
+.feature--hotels {
+
 }
 
-.feature--expanded-image {
-  color: var(--contrast-color, rgb(255, 255, 255));
-  background-color: var(--accent-color, rgb(129, 179, 210));
+.feature--food {
+
 }
 
-.feature__container {
+.feature--souvenirs {
 
 }
 
 .feature__title {
   font-size: 1.5rem;
   line-height: 1;
-  text-align: center;
-}
-
-.feature__description {
-  text-align: center;
-}
-
-.feature__image {
-
-}
-
-.feature__sub-list {
-  list-style: none;
-}
-
-.feature__sub-list-item {
-
-}
-
-
-/* Sub-feature */
-
-.sub-feature {
-  background-color: var(--contrast-color, rgb(255, 255, 255));
-}
-
-.sub-feature--hotels {
-
-}
-
-.sub-feature--food {
-
-}
-
-.sub-feature--souvenirs {
-
-}
-
-.sub-feature__title {
-  font-size: 1.5rem;
-  line-height: 1;
   color: var(--secondary-color, rgb(0, 0, 0));
   text-align: center;
 }
 
-.sub-feature__description {
+.feature__description {
   color: var(--primary-color, rgb(51, 51, 51));
   text-align: center;
 }

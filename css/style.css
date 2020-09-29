@@ -25,6 +25,12 @@
   --contrast-color-opacity-90: rgba(255, 255, 255, 0.9);
   --contrast-color-opacity-30: rgba(255, 255, 255, 0.3);
   --secndary-color-opacity-30: rgba(0, 0, 0, 0.3);
+
+  /* Logo fill */
+
+  --logo-main-color: rgb(35, 31, 32);
+  --logo-hover-color: rgb(129, 179, 210);
+  --logo-active-color: rgb(189, 187, 188);
 }
 
 
@@ -122,7 +128,9 @@ a {
 }
 
 .navigation__logo-img {
-
+  display: block;
+  width: 138px;
+  height: 70px;
 }
 
 
@@ -411,12 +419,27 @@ a {
 }
 
 .footer__logo-link {
-
+  vertical-align: middle;
 }
 
 .footer__logo-icon {
-
+  width: 114px;
+  height: 40px;
 }
+
+.footer__logo-icon-symbol {
+  fill: var(--logo-main-color, rgb(35, 31, 32));
+}
+
+.footer__logo-link:hover .footer__logo-icon-symbol {
+  fill: var(--logo-hover-color, rgb(129, 179, 210));
+}
+
+.footer__logo-link:active .footer__logo-icon-symbol {
+  fill: var(--logo-active-color, rgb(189, 187, 188));
+}
+
+
 
 
 /* Socials */

@@ -257,8 +257,14 @@ a {
   text-align: center;
 }
 
-.reason__image {
+.reason__picture {
+  display: block;
+}
 
+.reason__image {
+  display: block;
+  width: 800px;
+  height: 256px;
 }
 
 .reason__sub-list {

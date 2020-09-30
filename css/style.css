@@ -84,6 +84,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -123,16 +124,6 @@ a {
 
 }
 
-.navigation__logo-link {
-
-}
-
-.navigation__logo-img {
-  display: block;
-  width: 138px;
-  height: 70px;
-}
-
 
 /* Navigation */
 
@@ -145,7 +136,9 @@ a {
 }
 
 .navigation__logo-img {
-
+  display: block;
+  width: 138px;
+  height: 70px;
 }
 
 .navigation__menu {

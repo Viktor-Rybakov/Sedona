@@ -292,6 +292,7 @@ a {
   grid-column: 1 / -1;
 
   display: grid;
+  direction: rtl;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: min-content;
 

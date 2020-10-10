@@ -301,7 +301,9 @@ a {
   padding-top: 77px;
 
   background-color: var(--top-section-background, rgb(202, 219, 234));
-}
+  background-image: url('../img/top-section-background.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;}
 
 .top-section::before {
   content: url('../img/welcome.svg');

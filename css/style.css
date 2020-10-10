@@ -35,6 +35,10 @@
   /* Sort buttons */
 
   --sort-button-color: rgb(202, 202, 202);
+
+  /* Top section */
+
+  --top-section-background: rgb(202, 219, 234);
 }
 
 
@@ -296,19 +300,15 @@ a {
   align-items: center;
   padding-top: 77px;
 
+  background-color: var(--top-section-background, rgb(202, 219, 234));
 }
 
-.section__description {
-  line-height: 1.857;
-  text-align: center;
-}
-
-
-/* Top-section */
-
-.top-section {
-
-  background-color: var(--accent-color, rgb(129, 179, 210));
+.top-section::before {
+  content: url('../img/welcome.svg');
+  display: block;
+  width: 458px;
+  height: 352px;
+  margin-bottom: 81px;
 }
 
 .top-section__description {
@@ -327,6 +327,18 @@ a {
   background-color: var(--contrast-color, rgb(255, 255, 255));
 }
 
+.top-section__description::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  transform: translateY(-100%);
+  display: block;
+  width: 1200px;
+  height: 57px;
+  margin-bottom: 45px;
+  clip-path: url('#shape');
+  background-color: var(--contrast-color, rgb(255, 255, 255));
+}
 
 
 /* Reasons-section */
@@ -471,6 +483,14 @@ a {
   padding-right: 50px;
 
   background-color: var(--contrast-color, rgb(255, 255, 255));
+}
+
+.feature::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 26px;
 }
 
 .feature--hotels {

@@ -278,7 +278,6 @@ a {
 
 .menu__link--current {
   color: var(--secondary-accent-color, rgb(118, 99, 87));
-  cursor: pointer;
 }
 
 .menu__link--current:hover {
@@ -685,6 +684,14 @@ a {
 .results-controls__sort-link--current {
   color: var(--accent-color, rgb(129, 179, 210));
   border-bottom: none;
+}
+
+.results-controls__sort-link--current:hover {
+  color: var(--accent-color, rgb(129, 179, 210));
+}
+
+.results-controls__sort-link--current:active {
+  color: var(--accent-color, rgb(129, 179, 210));
 }
 
 .results-controls__order-links-wrapper {

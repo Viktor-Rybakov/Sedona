@@ -72,7 +72,62 @@
       <section class="search-section">
         <h1 class="visually-hidden">Поиск гостиницы</h1>
 
-        <!-- Форма поиска -->
+        <form class="search-section__form search-form" method="GET" action="https://echo.htmlacademy.ru/">
+          <fieldset class="search-form__fieldset">
+            <legend class="search-form__legend">Инфраструктура:</legend>
+
+            <input class="seach-form__checkbox visually-hidden" type="checkbox" id="swimming-pool" name="swimming-pool" checked>
+            <label class="search-form__label" for="swimming-pool">Бассейн</label>
+
+            <input class="seach-form__checkbox visually-hidden" type="checkbox" id="parking" name="parking">
+            <label class="search-form__label" for="parking">Парковка</label>
+
+            <input class="seach-form__checkbox visually-hidden" type="checkbox" id="wi-fi" name="wi-fi">
+            <label class="search-form__label" for="wi-fi">Wi-Fi</label>
+          </fieldset>
+
+          <fieldset class="search-form__fieldset">
+            <legend class="search-form__legend">Тип жилья:</legend>
+
+            <input class="seach-form__checkbox visually-hidden" type="checkbox" id="hotel" name="hotel" checked>
+            <label class="search-form__label" for="hotel">Гостиница</label>
+
+            <input class="seach-form__checkbox visually-hidden" type="checkbox" id="motel" name="motel" checked>
+            <label class="search-form__label" for="motel">Мотель</label>
+
+            <input class="seach-form__checkbox visually-hidden" type="checkbox" id="apartments" name="apartments" checked>
+            <label class="search-form__label" for="apartments">Апартаменты</label>
+          </fieldset>
+
+          <div class="search-form__range-wrapper">
+            <fieldset class="search-form__fieldset search-form__fieldset--range">
+              <legend class="search-form__legend">Стоимость в сутки (Р):</legend>
+
+              <div class="search-form__range range">
+                <div class="range__inputs-container">
+                  <label class="range__label">
+                    От
+                    <input class="range__input" type="text" name="cost-from" placeholder="0" pattern="^\d+$" inputmode="numeric">
+                  </label>
+
+                  <label class="range__label">
+                    До
+                    <input class="range__input" type="text" name="cost-to" placeholder="3000" pattern="^\d+$" inputmode="numeric">
+                  </label>
+                </div>
+
+                <div class="range__scale">
+                  <div class="range__bar" style="margin-left: 0%; width: 86%;">
+                    <div class="range__toggle range__toggle--min" tabindex="0" aria-label="Изменить нижнюю границу цены"></div>
+                    <div class="range__toggle range__toggle--max" tabindex="0" aria-label="Изменить верхнюю границу цены"></div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <button class="search-form__button" type="submit">Показать</button>
+          </div>
+        </form>
       </section>
 
       <section class="results-section">

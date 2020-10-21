@@ -584,10 +584,19 @@ a {
   align-items: center;
 
   width: 568px;
+  max-height: 800px;
   padding: 55px;
 
   background-color: var(--contrast-color, rgb(255, 255, 255));
   box-shadow: 0 7px 15px var(--form-shadow, rgba(0, 1, 1, 0.15));
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
+.order-form--hidden {
+  max-height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .order-form__label {

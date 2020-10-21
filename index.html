@@ -163,9 +163,9 @@
           предложения гостиниц в
           седоне</p>
 
-        <button class="order-section__button button button--brown" type="button">Поиск гостиницы в Седоне</button>
+        <button class="order-section__button button button--brown" type="button" aria-controls="order-form" aria-expanded="true">Поиск гостиницы в Седоне</button>
 
-        <form class="order-section__form order-form" method="GET" action="https://echo.htmlacademy.ru/">
+        <form class="order-section__form order-form" id="order-form" method="GET" action="https://echo.htmlacademy.ru/">
           <label class="order-form__label" for="date-arrival">Дата заезда:</label>
           <div class="order-form__date-input-container">
             <input class="order-form__input" type="text" id="date-arrival" name="date-arrival" placeholder="24 апреля 2017" required>
@@ -276,6 +276,8 @@
       </p>
     </footer>
   </div>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

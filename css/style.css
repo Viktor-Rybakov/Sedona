@@ -128,7 +128,10 @@ a {
 /* Fix-container */
 
 .fix-container {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   width: 1200px;
+  min-height: 100vh;
   margin-left: auto;
   margin-right: auto;
 
@@ -195,6 +198,20 @@ a {
 
 .button--blue:active {
   background-color: var(--accent-color-dark, rgb(84, 150, 189));
+}
+
+/* Main */
+
+.main {
+  background-color: var(--contrast-color, rgb(255, 255, 255));
+}
+
+.main--blank {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 

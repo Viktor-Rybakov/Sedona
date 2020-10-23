@@ -595,25 +595,29 @@ a {
 /* Order-form */
 
 .order-form {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 29px;
-  align-items: center;
-
-  width: 568px;
-  max-height: 800px;
-  padding: 55px;
-
+  display: block;
   background-color: var(--contrast-color, rgb(255, 255, 255));
   box-shadow: 0 7px 15px var(--form-shadow, rgba(0, 1, 1, 0.15));
+  max-height: 450px;
+  width: 568px;
   overflow: hidden;
   transition: 0.5s ease;
 }
 
 .order-form--hidden {
   max-height: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+}
+
+.order-form__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 29px;
+  align-items: center;
+  width: 100%;
+  max-height: 450px;
+  padding: 55px;
+
+  overflow-x: auto;
 }
 
 .order-form__label {

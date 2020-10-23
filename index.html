@@ -166,47 +166,49 @@
         <button class="order-section__button button button--brown" type="button" aria-controls="order-form" aria-expanded="true">Поиск гостиницы в Седоне</button>
 
         <form class="order-section__form order-form" id="order-form" method="GET" action="https://echo.htmlacademy.ru/">
-          <label class="order-form__label" for="date-arrival">Дата заезда:</label>
-          <div class="order-form__date-input-container">
-            <input class="order-form__input" type="text" id="date-arrival" name="date-arrival" placeholder="24 апреля 2017" required>
+          <div class="order-form__container">
+            <label class="order-form__label" for="date-arrival">Дата заезда:</label>
+            <div class="order-form__date-input-container">
+              <input class="order-form__input" type="text" id="date-arrival" name="date-arrival" placeholder="24 апреля 2017" required>
 
-            <button class="order-form__calendar-button" type="button" aria-label="Выбрать дату заезда">
-              <svg class="order-form__calendar-icon" width="21" height="23" aria-hidden="true">
-                <use class="order-form__calendar-icon-symbol" href="#calendar"></use>
-              </svg>
-            </button>
+              <button class="order-form__calendar-button" type="button" aria-label="Выбрать дату заезда">
+                <svg class="order-form__calendar-icon" width="21" height="23" aria-hidden="true">
+                  <use class="order-form__calendar-icon-symbol" href="#calendar"></use>
+                </svg>
+              </button>
+            </div>
+
+            <label class="order-form__label" for="date-departure">Дата выезда:</label>
+            <div class="order-form__date-input-container">
+              <input class="order-form__input" type="text" id="date-departure" name="date-departure" placeholder="4 июля 2017" required>
+
+              <button class="order-form__calendar-button" type="button" aria-label="Выбрать дату выезда">
+                <svg class="order-form__calendar-icon" width="21" height="23" aria-hidden="true">
+                  <use class="order-form__calendar-icon-symbol" href="#calendar"></use>
+                </svg>
+              </button>
+            </div>
+
+            <label class="order-form__label" for="number-adults">Взрослые:</label>
+            <div class="order-form__number-input-container">
+              <button class="order-form__number-button" type="button" aria-label="Уменьшить количество взрослых"></button>
+
+              <input class="order-form__input order-form__input--number" type="text" id="number-adults" name="number-adults" placeholder="2" pattern="^\d+$" inputmode="numeric" required>
+
+              <button class="order-form__number-button order-form__number-button--plus" type="button" aria-label="Увеличить количество взрослых"></button>
+            </div>
+
+            <label class="order-form__label order-form__label--children" for="number-children">Дети:</label>
+            <div class="order-form__number-input-container">
+              <button class="order-form__number-button" type="button" aria-label="Уменьшить количество детей"></button>
+
+              <input class="order-form__input order-form__input--number" type="text" id="number-children" name="number-children" placeholder="0" pattern="^\d+$" inputmode="numeric" required>
+
+              <button class="order-form__number-button order-form__number-button--plus" type="button" aria-label="Увеличить количество детей"></button>
+            </div>
+
+            <button class="button button--blue order-form__button" type="submit">Найти</button>
           </div>
-
-          <label class="order-form__label" for="date-departure">Дата выезда:</label>
-          <div class="order-form__date-input-container">
-            <input class="order-form__input" type="text" id="date-departure" name="date-departure" placeholder="4 июля 2017" required>
-
-            <button class="order-form__calendar-button" type="button" aria-label="Выбрать дату выезда">
-              <svg class="order-form__calendar-icon" width="21" height="23" aria-hidden="true">
-                <use class="order-form__calendar-icon-symbol" href="#calendar"></use>
-              </svg>
-            </button>
-          </div>
-
-          <label class="order-form__label" for="number-adults">Взрослые:</label>
-          <div class="order-form__number-input-container">
-            <button class="order-form__number-button" type="button" aria-label="Уменьшить количество взрослых"></button>
-
-            <input class="order-form__input order-form__input--number" type="text" id="number-adults" name="number-adults" placeholder="2" pattern="^\d+$" inputmode="numeric" required>
-
-            <button class="order-form__number-button order-form__number-button--plus" type="button" aria-label="Увеличить количество взрослых"></button>
-          </div>
-
-          <label class="order-form__label order-form__label--children" for="number-children">Дети:</label>
-          <div class="order-form__number-input-container">
-            <button class="order-form__number-button" type="button" aria-label="Уменьшить количество детей"></button>
-
-            <input class="order-form__input order-form__input--number" type="text" id="number-children" name="number-children" placeholder="0" pattern="^\d+$" inputmode="numeric" required>
-
-            <button class="order-form__number-button order-form__number-button--plus" type="button" aria-label="Увеличить количество детей"></button>
-          </div>
-
-          <button class="button button--blue order-form__button" type="submit">Найти</button>
         </form>
       </section>
 

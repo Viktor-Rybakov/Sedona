@@ -639,6 +639,8 @@ a {
 
 .order-form__input--number {
   width: calc(100% - 38px * 2);
+  padding: 6px;
+  text-align: center;
 }
 
 .order-form__input::placeholder {

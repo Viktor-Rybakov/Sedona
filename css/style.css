@@ -20,13 +20,15 @@
   --addition-contrast-color: rgb(242, 242, 242);
   --addition-primary-color: rgb(102, 102, 102);
 
+  --page-shadow: rgba(0, 1, 1, 0.2);
+
   /* Colors with opacity */
 
   --contrast-color-opacity-90: rgba(255, 255, 255, 0.9);
   --contrast-color-opacity-30: rgba(255, 255, 255, 0.3);
   --secondary-color-opacity-30: rgba(0, 0, 0, 0.3);
 
-  /* Logo fill */
+  /* Footer-logo fill */
 
   --logo-main-color: rgb(35, 31, 32);
   --logo-hover-color: rgb(129, 179, 210);
@@ -42,14 +44,12 @@
   --top-section-background: rgb(202, 219, 234);
   --line-color: rgb(229,229,229);
 
-  /* Shadow */
+  /* Forms colors */
 
-  --page-shadow: rgba(0, 1, 1, 0.2);
   --form-shadow:  rgba(0, 1, 1, 0.15);
-  --form-hover-color: rgb(235, 235, 235);
-  --toggle-shadow: rgba(171, 171, 171, 0.3);
-
+  --form-hover: rgb(235, 235, 235);
   --toggle-background: rgb(171, 171, 171);
+  --toggle-shadow: rgba(171, 171, 171, 0.3);
 }
 
 
@@ -117,11 +117,12 @@ a {
   width: 1px;
   height: 1px;
   margin: -1px;
-  padding: 0;
   border: 0;
+  padding: 0;
   white-space: nowrap;
-  overflow: hidden;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 
@@ -158,7 +159,8 @@ a {
 .link:focus {
   outline: none;
   color: var(--accent-color, rgb(129, 179, 210));
-  box-shadow: 0 0 0 2px var(--contrast-color, rgb(255, 255, 255)), 0 0 0 4px var(--secondary-accent-color, rgb(118, 99, 87));
+  box-shadow: 0 0 0 2px var(--contrast-color, rgb(255, 255, 255)),
+              0 0 0 4px var(--secondary-accent-color, rgb(118, 99, 87));
 }
 
 
@@ -197,7 +199,8 @@ a {
 
 .button--brown:focus {
   outline: none;
-  box-shadow: 0 0 0 2px var(--contrast-color, rgb(255, 255, 255)), 0 0 0 4px var(--accent-color, rgb(129, 179, 210));
+  box-shadow: 0 0 0 2px var(--contrast-color, rgb(255, 255, 255)),
+              0 0 0 4px var(--accent-color, rgb(129, 179, 210));
 }
 
 .button--blue {
@@ -214,7 +217,8 @@ a {
 
 .button--blue:focus {
   outline: none;
-  box-shadow: 0 0 0 2px var(--contrast-color, rgb(255, 255, 255)), 0 0 0 4px var(--secondary-accent-color, rgb(118, 99, 87));
+  box-shadow: 0 0 0 2px var(--contrast-color, rgb(255, 255, 255)),
+              0 0 0 4px var(--secondary-accent-color, rgb(118, 99, 87));
 }
 
 
@@ -683,7 +687,7 @@ a {
 }
 
 .order-form__input:hover {
-  background-color: var(--form-hover-color, rgb(235,235,235));
+  background-color: var(--form-hover, rgb(235,235,235));
 }
 
 .order-form__input:focus {
@@ -948,7 +952,8 @@ a {
 
 .search-form__button:focus {
   outline: none;
-  box-shadow: 0 0 0 2px var(--secondary-accent-color, rgb(118, 99, 87)), 0 0 0 4px var(--accent-color, rgb(129, 179, 210));
+  box-shadow: 0 0 0 2px var(--secondary-accent-color, rgb(118, 99, 87)),
+              0 0 0 4px var(--accent-color, rgb(129, 179, 210));
 }
 
 
@@ -1035,7 +1040,8 @@ a {
 
 .range__toggle:focus {
   outline: none;
-  box-shadow: 0 0 0 2px var(--secondary-accent-color, rgb(118, 99, 87)), 0 0 0 4px var(--accent-color, rgb(129, 179, 210));
+  box-shadow: 0 0 0 2px var(--secondary-accent-color, rgb(118, 99, 87)),
+              0 0 0 4px var(--accent-color, rgb(129, 179, 210));
 }
 
 .range__toggle--min {
@@ -1145,7 +1151,8 @@ a {
 .results-controls__sort-link:focus {
   outline: none;
   color: var(--accent-color, rgb(129, 179, 210));
-  box-shadow: 0 0 0 2px var(--contrast-color, rgb(255, 255, 255)), 0 0 0 4px var(--secondary-accent-color, rgb(118, 99, 87));
+  box-shadow: 0 0 0 2px var(--contrast-color, rgb(255, 255, 255)),
+              0 0 0 4px var(--secondary-accent-color, rgb(118, 99, 87));
 }
 
 .results-controls__sort-link--current,
@@ -1174,7 +1181,8 @@ a {
 .results-controls__order-link:focus {
   outline: none;
   color: var(--accent-color, rgb(129, 179, 210));
-  box-shadow: 0 0 0 2px var(--contrast-color, rgb(255, 255, 255)), 0 0 0 4px var(--secondary-accent-color, rgb(118, 99, 87));
+  box-shadow: 0 0 0 2px var(--contrast-color, rgb(255, 255, 255)),
+              0 0 0 4px var(--secondary-accent-color, rgb(118, 99, 87));
 }
 
 .results-controls__order-link-icon-symbol {
@@ -1371,7 +1379,8 @@ a {
 
 .footer__logo-link:focus {
   outline: none;
-  box-shadow: 0 0 0 2px var(--contrast-color, rgb(255, 255, 255)), 0 0 0 4px var(--secondary-accent-color, rgb(118, 99, 87));
+  box-shadow: 0 0 0 2px var(--contrast-color, rgb(255, 255, 255)),
+              0 0 0 4px var(--secondary-accent-color, rgb(118, 99, 87));
 }
 
 .footer__logo-link:focus .footer__logo-icon-symbol {
@@ -1414,7 +1423,8 @@ a {
 
 .socials__link:focus {
   outline: none;
-  box-shadow: 0 0 0 2px var(--contrast-color, rgb(255, 255, 255)), 0 0 0 4px var(--secondary-accent-color, rgb(118, 99, 87));
+  box-shadow: 0 0 0 2px var(--contrast-color, rgb(255, 255, 255)),
+              0 0 0 4px var(--secondary-accent-color, rgb(118, 99, 87));
 }
 
 .socials__icon-symbol {
